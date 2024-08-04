@@ -18,7 +18,7 @@ This project documents the process of ethically hacking an e-commerce website ru
     ```sh
     IP: 192.168.0.21
     ```
-![image](https://github.com/user-attachments/assets/90d92232-82b8-4a54-91a8-e06348f50338)
+
 
 2. **Nmap Scan**:
     ```sh
