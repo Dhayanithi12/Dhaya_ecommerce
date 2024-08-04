@@ -88,6 +88,11 @@ In the proxy section, Changed the rating to 0 which is impossible to give as the
 - Legal penalties.
 - Damage to reputation.
 
+<img width="604" alt="image" src="https://github.com/user-attachments/assets/f68a05ca-47e4-4880-ab68-ef2aaf6302c4">
+
+<img width="616" alt="image" src="https://github.com/user-attachments/assets/37b34c53-c655-45f3-a874-5260396a88c4">
+
+
 ### 3. DOM XSS (Cross-Site Scripting)
 
 **Description**: DOM-based XSS executed in the search bar.
@@ -98,6 +103,9 @@ In the proxy section, Changed the rating to 0 which is impossible to give as the
 **Impact**:
 - Stealing sensitive information.
 - Redirecting users to malicious sites.
+
+  <img width="602" alt="image" src="https://github.com/user-attachments/assets/fa610656-cfc2-4f75-a09a-901e3f6ce52e">
+
 
 ### 4. Error Handling (Security Misconfiguration)
 
@@ -110,6 +118,13 @@ In the proxy section, Changed the rating to 0 which is impossible to give as the
 - Unauthorized access.
 - Ability to launch further attacks.
 
+  <img width="607" alt="image" src="https://github.com/user-attachments/assets/318a92a9-9edc-48e8-9391-4ef6e508cacb">
+  
+  Got the pop-up of Error Handing challenge completed after sending theinvalidfilepath request
+
+  <img width="606" alt="image" src="https://github.com/user-attachments/assets/3cdb16ba-7d13-4a1b-a8dd-70beb7c7fa4e">
+
+
 ### 5. Missing Encoding (Improper Input Validation)
 
 **Description**: URL encoding issue on the photo wall page.
@@ -120,6 +135,24 @@ In the proxy section, Changed the rating to 0 which is impossible to give as the
 **Impact**:
 - Unauthorized access.
 - Ability to perform restricted actions.
+
+  <img width="597" alt="image" src="https://github.com/user-attachments/assets/b227e5e3-865e-4035-8335-b530f9dc2300">
+
+  <img width="609" alt="image" src="https://github.com/user-attachments/assets/3014789e-abc5-4c99-a727-bc921465f8bf">
+
+  Thus, with the cyber chef, with url encoding option, # as %23
+  Then, I have replaced the # with the url encoding as the %23 in the source pathinthesourcecode and refreshed the page.
+
+  <img width="606" alt="image" src="https://github.com/user-attachments/assets/b2ce61da-b733-40cc-9de2-40df5ee8603a">
+  Solved the challenge Missing Encoding.
+
+  Impact:
+The impact of a successful improper input validation attack can include:
+· unauthorized access to sensitive data
+· the ability to perform actions on behalf of another user
+· the ability to perform actions that would otherwise be restricted
+· the ability to launch further attacks, such as SQL injection or code execution· The attacker may use the vulnerability to launch a DoS attack.
+
 
 ### 6. Outdated Allowlist (Unvalidated Redirects)
 
@@ -132,6 +165,20 @@ In the proxy section, Changed the rating to 0 which is impossible to give as the
 - Stealing sensitive information.
 - Redirecting users to phishing sites.
 
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/dd73c62d-8999-4b95-ae29-d0f5a761618e">
+searched for this in url
+http://192.168.1.10:3000/
+redirect?to=https://blockchain.info/address/1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm redirected to theBlockchain.com,
+
+<img width="609" alt="image" src="https://github.com/user-attachments/assets/fc47767b-ad40-48f8-a116-ea2482d3856f">
+
+Impact:
+The impact of a successful Unvalidated Redirects attack can include:
+* stealing sensitive information such as cookies, session tokens, andpersonalinformation
+* perform actions on behalf of the user, such as making unauthorizedtransactions orposting malicious content  redirecting the user to a phishing website, where the attacker may steal
+sensitiveinformation.  spreading malware to the user's device
+* spreading the attack to other users, if the malicious website is able topropagate itself.
+
 ### 7. Privacy Policy (Privacy Policy Manipulation)
 
 **Description**: Exploiting vulnerabilities in the privacy policy.
@@ -142,12 +189,29 @@ In the proxy section, Changed the rating to 0 which is impossible to give as the
 **Impact**:
 - Unauthorized access to sensitive information.
 
+  <img width="608" alt="image" src="https://github.com/user-attachments/assets/17f288b7-2d54-4363-994e-73bbfdd6353b">
+
+Impact:
+No significant impactThe impact of a successful Privacy Policy attack can include:
+* unauthorized access to sensitive information
+* loss of trust from customers or users whose data was mishandled
+*  legal penalties or fines for organizations that are required to protect sensitive dataunder regulations such as HIPAA, PCI-DSS, and GDPR
+* damage to reputation and negative publicity for the organization
+
 ### 8. Repetitive Registration
 
 **Description**: Creating multiple accounts with mismatched password lengths.
 
 **Steps to Reproduce**:
 - Register with different original and repeat password lengths.
+
+
+
+<img width="606" alt="image" src="https://github.com/user-attachments/assets/b38f3dfd-09c4-49bd-9d7b-d020d3a95bac">
+
+successfully completed the challenge, Repetitive Registration.
+
+<img width="601" alt="image" src="https://github.com/user-attachments/assets/4841830f-c744-4cba-bfe0-07f6db078b68">
 
 **Impact**:
 - Unauthorized access.
