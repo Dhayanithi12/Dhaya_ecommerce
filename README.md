@@ -18,6 +18,7 @@ This project documents the process of ethically hacking an e-commerce website ru
     ```sh
     IP: 192.168.0.21
     ```
+<img width="776" alt="image" src="https://github.com/user-attachments/assets/482e1500-d8af-45c1-baa5-42f2fd5873d1">
 
 
 2. **Nmap Scan**:
@@ -26,11 +27,28 @@ This project documents the process of ethically hacking an e-commerce website ru
     ```
     Open ports: `20, 21, 80, 3000, 8080`
 
+<img width="781" alt="image" src="https://github.com/user-attachments/assets/39637a6c-1a9e-4a15-84a3-1362e79fb149">
+
 3. **Service Enumeration**:
     - **Port 21 (FTP)**: No luck with `ftp anonymous@192.168.0.21`
+      <img width="781" alt="image" src="https://github.com/user-attachments/assets/c2262c41-d163-403f-84fc-c46a646a0763">
+
     - **Port 80 (HTTP)**: Apache default webpage at `http://192.168.0.21:80`
+      <img width="783" alt="image" src="https://github.com/user-attachments/assets/0813839c-1114-4ac1-97e1-9334458d6458">
+
     - **Port 8080 (HTTP)**: No response from `http://192.168.0.21:8080`
+      <img width="763" alt="image" src="https://github.com/user-attachments/assets/9a255f18-7ce9-4227-b904-e7e7a129525f">
+
+
     - **Port 3000 (HTTP)**: OWASP Juice Shop at `http://192.168.0.21:3000`
+      <img width="784" alt="image" src="https://github.com/user-attachments/assets/628ab827-642e-4700-a793-8976b9497c82">
+      <img width="765" alt="image" src="https://github.com/user-attachments/assets/c5627d0a-2a8a-4cb1-8ad9-f4ffdde566dc">
+
+##main.js File
+
+<img width="779" alt="image" src="https://github.com/user-attachments/assets/fee7f1e9-7037-4744-a662-b26d76dd85e5">
+
+
 
 ## Exploited Vulnerabilities
 
@@ -45,6 +63,17 @@ This project documents the process of ethically hacking an e-commerce website ru
 **Impact**:
 - Unauthorized access to sensitive data.
 - Ability to perform restricted actions.
+
+<img width="781" alt="image" src="https://github.com/user-attachments/assets/0bf5e9a5-566c-4e2d-ad50-97788470fea5">
+
+<img width="786" alt="image" src="https://github.com/user-attachments/assets/8b7ffa3a-438d-49f7-b599-9475be886c8e">
+In the proxy section, Changed the rating to 0 which is impossible to give as theleastrating is
+1. Then forwarded the request. Then got the pop-up solved the challengedZero-stars
+
+<img width="604" alt="image" src="https://github.com/user-attachments/assets/303d9eae-4e28-4f7d-b7dd-c4a6a092ae6f">
+
+<img width="607" alt="image" src="https://github.com/user-attachments/assets/46df9db1-a287-4070-8b89-673a4e975b3f">
+
 
 ### 2. Confidential Document (Sensitive Data Exposure)
 
